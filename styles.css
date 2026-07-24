@@ -30,7 +30,7 @@ a { color: var(--link); }
 }
 .header a { color: var(--muted); }
 
-.article-header { padding: 76px 0 58px; }
+.article-header { padding: 48px 0 36px; }
 .kicker {
   margin: 0 0 14px;
   color: var(--muted);
@@ -46,13 +46,13 @@ h1 {
   line-height: 1.08;
   letter-spacing: -.035em;
 }
-.dek { max-width: 540px; margin: 22px 0 0; color: var(--muted); font-size: 19px; line-height: 1.45; }
-.byline { margin: 20px 0 0; color: var(--muted); font: 14px/1.5 Arial, sans-serif; }
+.dek { max-width: 540px; margin: 16px 0 0; color: var(--muted); font-size: 19px; line-height: 1.45; }
+.byline { margin: 14px 0 0; color: var(--muted); font: 14px/1.5 Arial, sans-serif; }
 
-section { padding: 42px 0 48px; border-top: 1px solid var(--line); }
-h2 { margin: 0 0 18px; font-size: 30px; line-height: 1.2; }
-p { margin: 0 0 18px; }
-ul { margin: 22px 0; padding-left: 22px; }
+section { padding: 28px 0 34px; border-top: 1px solid var(--line); }
+h2 { margin: 0 0 13px; font-size: 30px; line-height: 1.2; }
+p { margin: 0 0 14px; }
+ul { margin: 17px 0; padding-left: 22px; }
 li { margin: 9px 0; padding-left: 4px; }
 .formula {
   margin: 26px 0 12px;
@@ -62,12 +62,12 @@ li { margin: 9px 0; padding-left: 4px; }
   font-size: 19px;
 }
 .process {
-  margin: 28px 0;
+  margin: 19px 0;
   color: #444;
   font: 13px/1.7 Arial, sans-serif;
   letter-spacing: .02em;
 }
-figure { margin: 30px 0 27px; }
+figure { margin: 22px 0 20px; }
 .paper-figure { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .grid line { stroke: #e8e8e8; stroke-width: 1; }
 .plot { fill: none; stroke-width: 2.5; stroke-linecap: round; }
@@ -80,11 +80,11 @@ figcaption i { display: inline-block; width: 18px; height: 2px; margin-right: 6p
 figcaption .color-key { background: var(--blue); }
 figcaption .cascade-key { background: var(--orange); }
 
-.footer { margin-top: 12px; padding: 24px 0 36px; border-top: 1px solid var(--line); color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+.footer { margin-top: 8px; padding: 18px 0 28px; border-top: 1px solid var(--line); color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
 
 @media (max-width: 520px) {
   .wrap { width: min(100% - 28px, 680px); }
-  .article-header { padding: 54px 0 42px; }
+  .article-header { padding: 38px 0 30px; }
   h1 { font-size: 40px; }
   .dek { font-size: 17px; }
   h2 { font-size: 27px; }
