@@ -47,7 +47,7 @@ h1 {
   letter-spacing: -.035em;
 }
 .dek { max-width: 540px; margin: 22px 0 0; color: var(--muted); font-size: 19px; line-height: 1.45; }
-.byline { margin: 20px 0 0; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
+.byline { margin: 20px 0 0; color: var(--muted); font: 14px/1.5 Arial, sans-serif; }
 
 section { padding: 42px 0 48px; border-top: 1px solid var(--line); }
 h2 { margin: 0 0 18px; font-size: 30px; line-height: 1.2; }
