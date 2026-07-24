@@ -20,7 +20,7 @@
         <section>
           <h2>Context</h2>
           <p>Although the training data for LLMs is popularly characterized as “the entire internet”, in practice great care and effort is needed to prepare high quality datasets. Our objective is to select a data <i>S</i> of size <i>n</i> targeting downstream metrics.</p>
-          <p>The CoLoR filter trains a pair of small auxiliary LLMs: Pr(<i>x</i> | marginal) trained on the available training data, followed by Pr(<i>x</i> | conditional) fine-tuned on the downstream task. The auxiliary models are then used to select the <i>n</i> training sequences <i>x</i> with the smallest scores: −log Pr(<i>x</i> | conditional) + log Pr(<i>x</i> | marginal).</p>
+          <p><a href="https://arxiv.org/abs/2406.10670">The CoLoR filter trains</a> a pair of small auxiliary LLMs: Pr(<i>x</i> | marginal) trained on the available training data, followed by Pr(<i>x</i> | conditional) fine-tuned on the downstream task. The auxiliary models are then used to select the <i>n</i> training sequences <i>x</i> with the smallest scores: −log Pr(<i>x</i> | conditional) + log Pr(<i>x</i> | marginal).</p>
         </section>
 
         <section>
