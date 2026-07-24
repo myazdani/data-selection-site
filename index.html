@@ -27,16 +27,16 @@
           <h2>Cascading ablated auxiliary models</h2>
           <p>After training the auxiliary models, the CoLoR filter is bottlenecked by inference, which can be very large (i.e. “the entire internet”). To improve throughput, we propose cascading with ablated auxiliary models.</p>
           <p class="process"><strong>Available data</strong> → <strong>cheap ablated score</strong> → <strong>shortlist</strong> → <strong>full CoLoR score</strong></p>
-          <p>Below we show the downstream Books validation loss for three 410M models with C4 data trained around the selection threshold:</p>
+          <figure>
+            <img class="paper-figure" src="eval_loss_books_hard_source.png" alt="Hard-source Books validation loss comparing hard-positive only, hard PN cascade, and hard PN mixture control." />
+            <figcaption>Figure from the COLM-2026 paper: Hard-source Books validation loss.</figcaption>
+          </figure>
+          <p>The figure shows the downstream Books validation loss for three 410M models with C4 data trained around the selection threshold:</p>
           <ul>
             <li>Random baseline (black line): trained on 100K randomly sampled sequences</li>
             <li>CoLoR baseline (blue line; averaged over 3 seeds): 100K sequences selected by the CoLoR filter</li>
             <li>Cascade (orange line; averaged over 3 seeds): 100K sequences selected by the proposed cascade</li>
           </ul>
-          <figure>
-            <img class="paper-figure" src="eval_loss_books_hard_source.png" alt="Hard-source Books validation loss comparing hard-positive only, hard PN cascade, and hard PN mixture control." />
-            <figcaption>Figure from the COLM-2026 paper: Hard-source Books validation loss.</figcaption>
-          </figure>
           <p>The 100K sequences selected by the cascade have only a 0.49 Jaccard similarity with the 100K samples selected by the CoLoR filter, yet achieve slightly improved loss. See the <a href="colm2026-paper.pdf">paper</a> for more details.</p>
         </section>
 
